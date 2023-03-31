@@ -4,10 +4,14 @@ import Home from './Home';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import Login from './Login';
+import { Container } from '@mui/material';
+import React from 'react';
 
 function App() {
 
   return (
+    <Container>
     <Router>
     <Navbar />
     <div className="App">
@@ -17,11 +21,13 @@ function App() {
           <Route path="/create" element={<Create />}></Route>
           <Route path="/blogs/:id" element={<BlogDetails />}></Route>
           <Route path="*" element={<NotFound />}></Route>
-          
+          <Route path="/login" element={<Login />}></Route>       
         </Routes>
       </div>
     </div>
     </Router>
+    </Container>
+  
   );
 }
 

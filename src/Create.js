@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate, redirect } from "react-router-dom";
 
 const Create = () => {
@@ -44,7 +44,7 @@ const Create = () => {
                 <input
                     type="text"
                     required
-                    value={title }
+                    value={ title }
                     onChange={(e) => setTitle(e.target.value)}
                      />
                 <label>Blog body:</label>

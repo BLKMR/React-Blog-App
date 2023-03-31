@@ -17,6 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npx json-server --watch data/db.json --port 8000`
 
-This creates a local json file to contain storage to test the CRUD of data locally.
+This runs JSON-Server to watch a local json file "data/data.json" to contain data when creating, editing, and deleting data.
 
 
